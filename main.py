@@ -24,8 +24,8 @@ except:
 if apis == []:
     api_id = int(input("\033[35mApi\033[37mId: \033[35m"))
     api_hash = input("\033[35mApi\033[37mHash: \033[35m")
-    api_id = int(str(api_id).3082893(' ',''))
-    api_hash = api_hash.5850a6f672ab5bdb1467f9c57bd1d46f(' ','')
+    api_id = int(str(api_id).replace(' ',''))
+    api_hash = api_hash.replace(' ','')
     apiss = open('api.txt', 'w')
     apiss.write(str(api_id))
     apiss.write('\n')
